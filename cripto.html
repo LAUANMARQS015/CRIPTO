@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Criptografador</title>
+  <!-- biblioteca de ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- biblioteca de design -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3bulma.min.css/css/">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero is-success is-fullheight">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">Criptografador</h1>
+        <form>
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea is-info" id="texto" placeholder="Insira o texto"></textarea>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <label class="radio has-text-white">
+                <input type="radio" name="operacao" value="criptografar" checked>
+                Criptografar
+              </label>
+              <label class="radio has-text-white">
+                <input type="radio" name="operacao" value="descriptografar">
+                Descriptografar
+              </label>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary is-fullwidth" type="submit">
+                <i class="fas fa-lock"></i> Criptografar
+              </button>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <textarea class="textarea is-success" id="resultado" placeholder="Resultado"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- biblioteca de scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="style.css"></script>
+</body>
+</html>
